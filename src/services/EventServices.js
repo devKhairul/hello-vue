@@ -13,6 +13,9 @@ const baseApiUrl = axios.create({
   export default {
       getEvents() {
           return baseApiUrl.get('/events')
+      },
+      getEvent(id) {
+          return baseApiUrl.get('/events/' + id)
       }
       
   }

@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      events: null
+      events: null,
     }
   },
   created() {
