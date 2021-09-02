@@ -1,7 +1,11 @@
 <template>
-  <div class="events">
-    <h1>Events For Good</h1>
-    <EventCard v-for="event in events" :event="event" :key="event.id" />
+  <div class="container mx-auto">
+    <h1 class="text-2xl font-bold pb-4">Events For Good</h1>
+    
+    <div class="grid grid-cols-3">
+      <EventCard v-for="event in events" :event="event" :key="event.id" />
+    </div>
+    
   </div>
 </template>
 
